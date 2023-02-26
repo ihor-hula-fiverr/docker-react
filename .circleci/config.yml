@@ -53,6 +53,7 @@ workflows:
   version: 2
   ci-cd:
     jobs:
+      - install
       - test:
           requires:
             - install
